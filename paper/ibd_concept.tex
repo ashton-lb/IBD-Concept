@@ -36,3 +36,19 @@ Machine learning techniques are introduced to dynamically adjust model parameter
 By integrating mathematical rigor with adaptive learning, the IBD framework offers a structured approach to decision-making under uncertainty.
 
 \end{document}
+\section{Implementation Prototype}
+
+A minimal implementation prototype was developed to validate the conceptual
+structure of the IBD framework.
+
+The prototype is implemented in Python and focuses on interpretability rather
+than performance. Objective functions are evaluated over continuous domains,
+with numerical derivatives used to identify stable regions of near-optimality.
+
+Robustness is introduced by evaluating objective functions under stochastic
+perturbations, allowing the framework to model uncertainty explicitly.
+Additionally, the implementation follows a machine-learning-compatible
+interface, including \textit{fit}, \textit{predict}, and \textit{loss} methods,
+facilitating future integration with learning-based systems.
+
+The full prototype is available in the public repository accompanying this work.
